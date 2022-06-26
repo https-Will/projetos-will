@@ -1,0 +1,94 @@
+:root{
+  --color-white-:#FFFFFF;
+  --color-second-title:#FFFF00;
+  --button-orange-color:#EA7810;
+}
+
+body{
+  width: 100%;
+  min-width:530px;
+  height: 100vh;
+  min-height: 530px;
+  font-family: Jost, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-image: url(../assets/background-color.jpg);
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  min-width: 530px;
+  height: 100%;
+  min-height: 530px;
+}
+
+.nikeshoe-img{
+  text-align: center;
+}
+
+.text-card{
+  text-align: center;
+  font-size: 44px;
+}
+
+.text-center{
+  line-height: 10px;
+}
+
+.text1{
+  font-weight: 900;
+  color: var(--color-white-);
+  text-shadow: #000 0.1em 0.1em 0.2em;
+  padding-right: 15%;
+}
+
+.text2{
+  color: var(--color-second-title);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-weight: 900;
+  padding-left: 8%;
+}
+
+.text3{
+  color: var(--color-white-);
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 5%;
+}
+
+.rodape-button{
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-button button{
+  width: 359px;
+  height: 95.97px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-white-);
+  cursor: pointer;
+}
+
+.rodape-button a button{
+  font-size: 36px;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--button-orange-color);
+  text-shadow: 0.1em 0.1em 0.1em #FFFFFF;
+}
+
+a button:hover{
+  background-color: #cfbc0f;
+  color: #FFFFFF;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.nikeshoe-img{
+  visibility: hidden;
+}
