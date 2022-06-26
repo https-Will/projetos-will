@@ -1,0 +1,134 @@
+:root{
+  font-size: 62,5%;
+  --azul-marinho: #053040;
+  --amarelo-alaranjado: #ffb20c;
+  --branco-gelo: #ecf1ef;
+  --fonte-family: Signika Negative;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header{
+  position: fixed;
+  background-color: var(--azul-marinho);
+  padding: 2rem;
+  width: 100%;
+  height: 3rem;
+}
+
+.nav-top h3{
+  color: var(--branco-gelo);
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-family: Signika Negative, sans-serif;
+}
+
+.nav-top span{
+  color: var(--amarelo-alaranjado)
+}
+
+.foto-nav{
+  text-align: center;
+}
+
+.willian-nav{
+  text-align: center;
+}
+.nav-lateral{
+  background-color: hsl(196, 88%, 16%);
+  margin-top: 7rem;
+  padding-top: 3rem;
+  position: fixed;
+  left: 0;
+  width: 25rem;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+}
+
+.nav-lateral .foto-perfil{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+  margin-bottom: 1rem;
+}
+
+.nav-lateral h3{
+  color:var(--amarelo-alaranjado);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.nav-lateral a{
+  color: var(--branco-gelo);
+  display: block;
+  width: 100%;
+  line-height: 6rem;
+  text-decoration: none;
+  padding-left: 4rem;
+  box-sizing: border-box;
+  transition: 0.2s;
+  transition-property: background;
+}
+
+.nav-lateral a:hover{
+  background: var(--amarelo-alaranjado);
+}
+
+.nav-lateral i{
+  padding-right:1rem;
+}
+
+label #navLateral-btn{
+  z-index: 1;
+  color: var(--branco-gelo);
+  position: fixed;
+  cursor: pointer;
+  left: 30rem;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #navLateral-btn:hover{
+  color: var(--amarelo-alaranjado);
+}
+
+#check:checked ~ .nav-lateral{
+  left: -20rem;
+}
+
+#check:checked ~ .nav-lateral a span{
+  display: none;
+}
+
+#check:checked ~ .nav-lateral a{
+  font-size: 2rem;
+  margin-left: 17rem;
+  width: 8rem;
+}
+
+.conteudo{
+  margin-left: 25rem;
+  background: url(assets/background-teste.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .conteudo{
+  margin-left: 5rem;
+}
+
+#check{
+  display: none;
+}
